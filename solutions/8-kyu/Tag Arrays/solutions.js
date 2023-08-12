@@ -20,3 +20,47 @@ function findMultiples(integer, limit) {
 // https://www.codewars.com/kata/57a5b0dfcf1fa526bb000118
 
 const distinct = a => [...new Set(a)];
+
+// Calculate average
+// https://www.codewars.com/kata/57a2013acf1fa5bfc4000921
+
+// 1
+
+function findAverage(array) {
+  if (array.length === 0) {
+    return 0;
+  } else {
+    const sumArray = array.reduce((sum, current) => sum + current);
+    const res = sumArray / array.length;
+    return res;
+  }
+}
+
+// 2
+
+function findAverage(array) {
+  return array.length === 0 ? 0 : array.reduce((sum, current) => sum + current) / array.length;
+}
+
+// Fake Binary
+// https://www.codewars.com/kata/57eae65a4321032ce000002d
+
+function fakeBin(x) {
+  let newX = [...x];
+  let res = '';
+  for (let i = 0; i < newX.length; i++) {
+      if (newX[i] < 5) {
+          res += '0';
+      } else {
+          res += '1';
+      }
+  }
+  return res;
+}
+
+// Convert a string to an array
+// https://www.codewars.com/kata/57e76bc428d6fbc2d500036d
+
+function stringToArray(string) {
+  return string.split(' ');
+}
