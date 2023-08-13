@@ -68,6 +68,21 @@ function stringToArray(string) {
 // Sentence Smash
 // https://www.codewars.com/kata/53dc23c68a0c93699800041d
 
-function smash (words) {
+function smash(words) {
   return words.join(' ');
+}
+
+// Counting sheep...
+// https://www.codewars.com/kata/54edbc7200b811e956000556
+
+function countSheeps(arrayOfSheep) {
+  let res = [];
+
+  arrayOfSheep.forEach(function(sheep) {
+    if (sheep === true) {
+      res.push(sheep)
+    }
+  })
+
+  return res.length;
 }
