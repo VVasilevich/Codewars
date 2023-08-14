@@ -93,3 +93,17 @@ function countSheeps(arrayOfSheep) {
 function arrayPlusArray(arr1, arr2) {
   return arr1.reduce((a, b) => a + b) + arr2.reduce((a, b) => a + b);
 }
+
+// Convert number to reversed array of digits
+// https://www.codewars.com/kata/5583090cbe83f4fd8c000051
+
+function digitize(n) {
+  let newN = [...'' + n];
+  let res = [];
+
+  for (let i = 0; i < newN.length; i++) {
+    res.push(newN[i]);
+  }
+  
+  return res.map(Number).reverse();
+}
