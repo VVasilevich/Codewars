@@ -97,6 +97,8 @@ function arrayPlusArray(arr1, arr2) {
 // Convert number to reversed array of digits
 // https://www.codewars.com/kata/5583090cbe83f4fd8c000051
 
+// 1
+
 function digitize(n) {
   let newN = [...'' + n];
   let res = [];
@@ -104,6 +106,12 @@ function digitize(n) {
   for (let i = 0; i < newN.length; i++) {
     res.push(newN[i]);
   }
-  
+
   return res.map(Number).reverse();
+}
+
+// 2
+
+function digitize(n) {
+  return String(n).split('').map(Number).reverse();
 }
