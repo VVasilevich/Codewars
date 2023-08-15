@@ -122,3 +122,8 @@ function digitize(n) {
 function grow(x) {
   return x.reduce((acc, count) => acc * count);
 }
+
+// Invert values
+// https://www.codewars.com/kata/5899dc03bc95b1bf1b0000ad
+
+const invert = array => array.map(num => -num);
