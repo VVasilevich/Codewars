@@ -127,3 +127,21 @@ function grow(x) {
 // https://www.codewars.com/kata/5899dc03bc95b1bf1b0000ad
 
 const invert = array => array.map(num => -num);
+
+// Square(n) Sum
+// https://www.codewars.com/kata/515e271a311df0350d00000f
+
+function squareSum(numbers) {
+  let num = [];
+  let res = 0;
+
+  for (let i = 0; i < numbers.length; i++) {
+    num.push(Math.pow(numbers[i], 2));
+  }
+
+  for (i = 0; i < num.length; i++) {
+    res += num[i];
+  }
+
+  return res;
+}
