@@ -131,6 +131,8 @@ const invert = array => array.map(num => -num);
 // Square(n) Sum
 // https://www.codewars.com/kata/515e271a311df0350d00000f
 
+// 1
+
 function squareSum(numbers) {
   let num = [];
   let res = 0;
@@ -144,4 +146,10 @@ function squareSum(numbers) {
   }
 
   return res;
+}
+
+// 2
+
+function squareSum(numbers) {
+  return numbers.reduce((a, b) => a + b * b, 0);
 }
