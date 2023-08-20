@@ -175,3 +175,25 @@ function printArray(array) {
 function getAverage(marks) {
   return Math.floor(marks.reduce((a, b) => a + b) / marks.length);
 }
+
+// Count of positives / sum of negatives
+// https://www.codewars.com/kata/576bb71bbbcf0951d5000044
+
+function countPositivesSumNegatives(input) {
+  if (!input || input.length === 0) {
+    return [];
+  }
+  
+  let pos = 0,
+      neg = 0;
+  
+  input.forEach(elem => {
+    if (elem > 0) {
+      pos++;
+    } else if (elem < 0) {
+      neg += elem;
+    }
+  });
+  
+  return [pos, neg];
+}
