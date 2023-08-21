@@ -204,3 +204,12 @@ function countPositivesSumNegatives(input) {
 function fixTheMeerkat(arr) {
   return arr.reverse();
 }
+
+// CSV representation of array
+// https://www.codewars.com/kata/5a34af40e1ce0eb1f5000036
+
+// 1
+
+function toCsvText(array) {
+  return array.map(row => row.join(',')).join('\n');
+}
