@@ -213,3 +213,9 @@ function fixTheMeerkat(arr) {
 function toCsvText(array) {
   return array.map(row => row.join(',')).join('\n');
 }
+
+// 2
+
+function toCsvText(array) {
+  return array.join('\n');
+}
